@@ -1,0 +1,4 @@
+name = "Panda",
+author = "AspireMint",
+description = "The default skin.",
+comment = "",

@@ -1,0 +1,87 @@
+# Hey emacs! -*- mode:conf -*-
+# Filename 'settingtypes.txt', for minetest mod "hudclock"
+#
+# ©2017 Boruch Baum <boruch_baum@gmx.com>
+# License: GPL3+
+
+[Display Elements]
+
+# Font color, in hexadecimal notation, using the form 0xRRGGBB
+hudclock_fg_color ( Font color ) string 0xFFFF00
+
+# Whether to display the time remaining till sunrise
+hudclock_sunrise (HUD Clock next sunrise) bool true
+
+# Whether to display the time remaining till sunset
+hudclock_sunset (HUD Clock next sunset) bool true
+
+# Whether to display real time elapsed, ie. how long have you been
+# playing in real-world time. Data will be for this session or since
+# you last turned the option on, whichever is more recent.
+hudclock_real_elapsed (HUD clock elapsed real time) bool false
+
+# Whether to display game time elapsed, ie. how much in-game time has
+# elapse for this session or since you last turned it on, whichever is
+# more recent.
+hudclock_game_elapsed (HUD clock elapsed game time) bool false
+
+[Positions and offsets]
+
+# The horizontal position of the HUD clock's text on your display
+# window as a percentage of its size, where 0.0 would be 0% (its left
+# margin) and 1.0 would be 100% (its right margin)
+hudclock_pos_x (HUD clock text x position) float 0.90 0.0 1.0
+
+# The vertical position of the HUD clock's text on your display window
+# as a percentage of its size, where 0.0 would be 0% (its top margin)
+# and 1.0 would be 100% (its bottom margin)
+hudclock_pos_y (HUD clock text y position) float 0.92 0.0 1.0
+
+# The horizontal offset of the HUD clock's image from the clock text,
+# measured in pixels. Use a negative number for a left-ward offset.
+hudclock_offset_x (HUD clock image x offset) int -30
+
+# The vertical offset of the HUD clock's image from the clock text,
+# measured in pixels. Use a negative number for an up-ward offset.
+hudclock_offset_y (HUD clock image y offset) int 0
+
+# -------------------------------------------------------------------
+
+# The horizontal position of the HUD clock's sunrise text on your
+# display window as a percentage of its size, where 0.0 would be 0%
+# (its left margin) and 1.0 would be 100% (its right margin)
+hudclock_sunrise_pos_x (HUD clock x sunrise position) float 0.94 0.0 1.0
+
+# The vertical position of the HUD clock's sunrise text on your
+# display window as a percentage of its size, where 0.0 would be 0%
+# (its top margin) and 1.0 would be 100% (its bottom margin)
+hudclock_sunrise_pos_y (HUD clock screen y sunrise position) float 0.95 0.0 1.0
+
+# -------------------------------------------------------------------
+
+# The horizontal position of the HUD clock's sunset text on your
+# display window as a percentage of its size, where 0.0 would be 0%
+# (its left margin) and 1.0 would be 100% (its right margin)
+hudclock_sunset_pos_x (HUD clock x sunset_position) float 0.94 0.0 1.0
+
+# The vertical position of the HUD clock's sunset text on your display
+# window as a percentage of its size, where 0.0 would be 0% (its top
+# margin) and 1.0 would be 100% (its bottom margin)
+hudclock_sunset_pos_y (HUD clock screen y sunset_position) float 0.98 0.0 1.0
+
+
+[Metrics]
+
+# How often to update the clock, in ??? units
+hudclock_update_interval (Default HUD clock update interval) float 1.0
+
+# Ratio of real-world time to in-game time
+hudclock_time_const ( Time ratio ) int 72
+
+# The percentage of the day at which time the event occurs, where 0.0
+# and 1.0 would be midnight and 0.5 would be midday noon
+hudclock_sunrise_time ( Sunrise time ) float 0.198
+
+# The percentage of the day at which time the event occurs, where 0.0
+# and 1.0 would be midnight and 0.5 would be midday noon
+hudclock_sunset_time ( Sunset time ) float 0.775

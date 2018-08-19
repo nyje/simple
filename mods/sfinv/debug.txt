@@ -1,0 +1,22 @@
+
+
+-------------
+  Separator
+-------------
+
+2018-08-16 13:29:16: [Main]: Automatically selecting world at [/home/www-data/BCC/bin/../worlds/BC]
+2018-08-16 13:29:17: WARNING[Main]: Undeclared global variable "WATER_VISC" accessed at ...ta/BCC/bin/../games/blockcolor/mods/noairblocks/init.lua:32
+2018-08-16 13:29:17: WARNING[Main]: Undeclared global variable "WATER_VISC" accessed at ...ta/BCC/bin/../games/blockcolor/mods/noairblocks/init.lua:64
+        .__               __                   __   
+  _____ |__| ____   _____/  |_  ____   _______/  |_ 
+ /     \|  |/    \_/ __ \   __\/ __ \ /  ___/\   __\
+|  Y Y  \  |   |  \  ___/|  | \  ___/ \___ \  |  |  
+|__|_|  /__|___|  /\___  >__|  \___  >____  > |__|  
+      \/        \/     \/          \/     \/        
+2018-08-16 13:29:17: ACTION[Main]: World at [/home/www-data/BCC/bin/../worlds/BC]
+2018-08-16 13:29:17: ACTION[Main]: Server for gameid="blockcolor" listening on 0.0.0.0:30005.
+2018-08-16 13:29:28: ACTION[Server]: Nigel [10.0.0.2] joins game. 
+2018-08-16 13:29:28: ACTION[Server]: Nigel joins game. List of players: Nigel
+2018-08-16 13:29:29: WARNING[Server]: Assignment to undeclared global "diff" inside a function at ...data/BCC/bin/../games/blockcolor/mods/hud_clock/init.lua:104.
+2018-08-16 13:29:33: ACTION[Server]: Showing formspec to Nigel
+2018-08-16 13:37:26: [Main]: INFO: signal_handler(): Ctrl-C pressed, shutting down.
