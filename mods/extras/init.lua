@@ -73,7 +73,7 @@ minetest.register_chatcommand("rbc", {
     end,
     })
 
-minetest.register_chatcommand("pr", {
+minetest.register_chatcommand("p", {
     description = "Promote to Player",
     privs = {ismod = true},
     func = function( name, param)
@@ -91,19 +91,13 @@ minetest.register_chatcommand("rb", {
     description = "Demote & rollback Player",
     privs = {ismod = true},
     func = function( name, param)
-        local cmd_def = minetest.chatcommands["revoke"]
-        if cmd_def then
-            minetest.chat_send_all("Player "..param.." has privs removed, and all their work is being removed from the game.")
-            local privs = minetest.get_player_privs(param)
-            privs.spill = nil
-            privs.outlander = nil
-            privs.noclip = nil
-            minetest.set_player_privs(param, privs)
-		end
-        local cmd_def = minetest.chatcommands["rollback"]
-        if cmd_def then
-			cmd_def.func(name, "rollback "..param.." 100000000")
-		end
+        minetest.chat_send_all("Player "..param.." has privs removed, and all their work is being removed from the game.")
+        local privs = minetest.get_player_privs(param)
+        privs.spill = nil
+        privs.outlander = nil
+        privs.noclip = nil
+        minetest.set_player_privs(param, privs)
+        minetest.rollback_revert_actions_by("player:"..param, 100000000)
         return false
     end,
     })
